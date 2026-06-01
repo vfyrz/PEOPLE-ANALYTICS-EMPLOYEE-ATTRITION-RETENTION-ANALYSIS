@@ -74,3 +74,13 @@ ORDER BY Avg_of_Attrition DESC;
 
 * **Insight:**  There is a clear downward trend showing that higher job satisfaction leads to better employee retention. Employees with the lowest satisfaction level (Job Satisfaction = 1) exhibit the highest attrition rate at 23%. As satisfaction increases to medium (2) and high (3), attrition stabilizes around 16% - 17%. The turnover rate drops significantly to its lowest point of 11% when employees report the highest level of satisfaction.
 
+---
+## 💡 HR Recommendations based on Data
+* **1)** To evaluate how an employee's subjective job satisfaction rating impacts their likelihood of leaving the organization and to identify critical thresholds for HR intervention.
+Sales Department Intervention: Since the Sales department has a critical attrition rate of 21%, HR should conduct targeted stay-interviews and review the commission/incentive structures for sales representatives.
+
+* **2)** Compensation Benchmark: Standardize compensation ranges for roles showing a high correlation between lower monthly income and a True attrition status to remain competitive in the market.
+
+* **3)** Workload and Retention Balance: HR needs to audit departments with excessive overtime hours. Implementing better workload distribution or hiring temporary staff could be cheaper than losing 31% of over-worked employees.
+
+* **4)** Proactive Pulse Surveys: Regularly track job satisfaction levels. Since employees with a rating of 1 have a 23% chance of leaving, HR can proactively intervene before they submit their resignation.

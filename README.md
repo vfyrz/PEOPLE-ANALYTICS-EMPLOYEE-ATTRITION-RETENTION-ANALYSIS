@@ -45,3 +45,32 @@ ORDER BY Avg_of_Attrition ASC;
 ```
 
 * **Insight:**  There is a massive spike in turnover among employees who work overtime. Employees who work overtime (Overtime = Yes) have an attrition rate of 31%, which is three times higher than those who do not work overtime (10%). This highlights that heavy workloads and poor work-life balance are critical drivers of employee resignation.
+
+### 3. Financial Analysis: Relationship Between Monthly Income and Attrition
+* **Objective:** Explore how compensation and monthly income impact an employee's decision to leave the company.
+* **Query:**
+```sql
+SELECT 
+  Attrition,
+  ROUND(AVG(Monthly_Income), 0) AS Avg_of_Monthly_Income
+FROM Kaggle.HR_Retention
+GROUP BY Attrition
+ORDER BY Avg_of_Monthly_Income ASC;
+```
+
+* **Insight:**  There is a clear financial gap between employees who stay and those who leave. Employees who left the company (Attrition = Yes) earned an average monthly income of $4,787, which is approximately 30% lower ($2,046 less) than the average income of employees who stayed ($6,833). This strongly confirms that lower compensation is a major driver of employee turnover.
+
+### 4. Sentiment Analysis: Correlation Between Job Satisfaction and Attrition
+* **Objective:** To evaluate how an employee's subjective job satisfaction rating impacts their likelihood of leaving the organization and to identify critical thresholds for HR intervention.
+* **Query:**
+```sql
+SELECT
+  JOB_SATISFACTION,
+ROUND(AVG(Attrition_Numeric)* 100,0) AS Avg_of_Attrition
+FROM Kaggle.HR_Retention
+GROUP BY JOB_SATISFACTION
+ORDER BY Avg_of_Attrition DESC;
+```
+
+* **Insight:**  There is a clear downward trend showing that higher job satisfaction leads to better employee retention. Employees with the lowest satisfaction level (Job Satisfaction = 1) exhibit the highest attrition rate at 23%. As satisfaction increases to medium (2) and high (3), attrition stabilizes around 16% - 17%. The turnover rate drops significantly to its lowest point of 11% when employees report the highest level of satisfaction.
+

@@ -30,5 +30,5 @@ GROUP BY Department
 ORDER BY Avg_of_Attrition ASC;```
 
 * **Insight:**  The Sales department exhibits the highest attrition rate at 21%, followed by Human Resources (19%) and Research & Development (14%).
-* **Insight: ** The Sales department exhibits the highest attrition rate at 21%, followed by Human Resources (19%) and Research & Development (14%).
+
 

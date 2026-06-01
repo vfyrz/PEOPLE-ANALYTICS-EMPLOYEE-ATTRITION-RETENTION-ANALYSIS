@@ -25,6 +25,7 @@ ORDER BY Avg_of_Attrition ASC;
 
 * **Insight:** The Sales department exhibits the highest attrition rate at 21%, followed by Human Resources (19%) and Research & Development (14%).
 
+---
 
 ### 2. Attrition Analysis by Overtime
 * **Objective:**Examine how working overtime correlates with an employee's likelihood to leave the company.
@@ -41,6 +42,8 @@ ORDER BY Avg_of_Attrition ASC;
 
 * **Insight:**  There is a massive spike in turnover among employees who work overtime. Employees who work overtime (`Overtime = Yes`) have an attrition rate of **31%**, which is **three times higher** than those who do not work overtime (**10%**). This highlights that heavy workloads and poor work-life balance are critical drivers of employee resignation.
 
+---
+
 ### 3. Financial Analysis: Relationship of Monthly Income and Attrition
 * **Objective:**Explore how compensation impacts an employee's decision to leave the company.
 * **Query:**
@@ -56,6 +59,7 @@ ORDER BY Avg_of_Monthly_Income ASC;
 
 * **Insight:**  There is a clear financial gap between employees who stay and those who leave. Employees who left the company (`Attrition = Yes`) earned an average monthly income of **$4,787**, which is approximately **30% lower** ($2,046 less) than the average income of employees who stayed (**$6,833**). This strongly confirms that lower compensation is a major driver of employee turnover.
 
+---
 
 ### 4. Financial Analysis: Relationship of Monthly Income and Attrition
 * **Objective:** To evaluate how an employee's subjective job satisfaction rating impacts their likelihood of leaving the organization and to identify critical thresholds for HR intervention.

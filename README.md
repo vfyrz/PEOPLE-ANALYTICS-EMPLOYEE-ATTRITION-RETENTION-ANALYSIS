@@ -32,4 +32,16 @@ ORDER BY Avg_of_Attrition ASC;
 
 * **Insight:**  The Sales department exhibits the highest attrition rate at 21%, followed by Human Resources (19%) and Research & Development (14%).
 
+### 2. Work-Life Balance Analysis: Impact of Overtime on Attrition
+* **Objective:** Examine how working overtime correlates with an employee's likelihood to leave the company
+* **Query:**
+```sql
+SELECT 
+  Overtime,
+  ROUND(AVG(Attrition_Numeric) * 100, 0) AS Avg_of_Attrition
+FROM Kaggle.HR_Retention
+GROUP BY Overtime
+ORDER BY Avg_of_Attrition ASC;
+```
 
+* **Insight:**  There is a massive spike in turnover among employees who work overtime. Employees who work overtime (Overtime = Yes) have an attrition rate of 31%, which is three times higher than those who do not work overtime (10%). This highlights that heavy workloads and poor work-life balance are critical drivers of employee resignation.

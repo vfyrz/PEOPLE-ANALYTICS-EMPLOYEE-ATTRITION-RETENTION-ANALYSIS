@@ -27,7 +27,8 @@ SELECT
 FROM Kaggle.HR_Retention
 GROUP BY Department
 -- Keep sorting from smallest to largest so the chart trends upward
-ORDER BY Avg_of_Attrition ASC;```
+ORDER BY Avg_of_Attrition ASC;
+```
 
 * **Insight:**  The Sales department exhibits the highest attrition rate at 21%, followed by Human Resources (19%) and Research & Development (14%).
 

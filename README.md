@@ -22,7 +22,7 @@ The ultimate goal of this project is to provide actionable insights for the Huma
 ```sql
 SELECT 
   Department,
-  -- Directly calculate the average of the numeric column, multiply by 100, and round it
+  -- Directly calculate the average of the attrition numeric column, multiply by 100, and round it
   ROUND(AVG(Attrition_Numeric) * 100, 0) AS Avg_of_Attrition
 FROM Kaggle.HR_Retention
 GROUP BY Department
